@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <VBox prefHeight="720.0" prefWidth="250.0">
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+            <Button id="homeBtnID" fx:id="homeBtnFXID" mnemonicParsing="false" onAction="#handleClicksFrame" prefHeight="62.0" prefWidth="266.0" text="Home" />
+            <Button id="tasksBtnID" fx:id="tasksBtnFXID" mnemonicParsing="false" onAction="#handleClicksFrame" prefHeight="62.0" prefWidth="266.0" text="Tasks" />
+            <Button id="remindersBtnID" fx:id="remindersBtnFXID" mnemonicParsing="false" onAction="#handleClicksFrame" prefHeight="62.0" prefWidth="266.0" text="Reminders" />
+         </children>
+      </VBox>
+      <StackPane layoutX="250.0" prefHeight="720.0" prefWidth="1030.0">
+         <children>
+            <Pane id="remindersPaneID" fx:id="remindersPaneFXID" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="28.0" layoutY="33.0" text="Reminders" />
+               </children>
+            </Pane>
+            <Pane id="homePaneID" fx:id="homePaneFXID" prefHeight="720.0" prefWidth="1030.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="29.0" layoutY="21.0" prefHeight="39.0" prefWidth="250.0" text="Home" />
+               </children>
+            </Pane>
+            <Pane id="tasksPaneID" fx:id="tasksPaneFXID" prefHeight="467.0" prefWidth="842.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Label layoutX="29.0" layoutY="33.0" text="Tasks" />
+                  <Button id="addTasksBtnID" fx:id="addTasksBtn" layoutX="29.0" layoutY="50.0" mnemonicParsing="false" onAction="#addTasks" text="Add" />
+                  <Button fx:id="editTasksBtn" layoutX="67.0" layoutY="50.0" mnemonicParsing="false" onAction="#editTasks" text="Edit" />
+                  <Button fx:id="removeTasksBtn" layoutX="103.0" layoutY="50.0" mnemonicParsing="false" onAction="#removeTasks" text="Remove" />
+                  <ListView fx:id="tasksListView" layoutX="29.0" layoutY="123.0" prefHeight="519.0" prefWidth="328.0" />
+                  <TextField fx:id="tasksTextField" layoutX="29.0" layoutY="85.0" prefHeight="25.0" prefWidth="328.0" />
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

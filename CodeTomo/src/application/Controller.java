@@ -18,17 +18,42 @@ import javafx.event.ActionEvent;
  */
 public class Controller implements Initializable {
 	
-	@FXML private Button homeBtnFXID;
-    @FXML private Pane homePaneFXID;
-    @FXML private Button remindersBtnFXID;
-    @FXML private Pane remindersPaneFXID;
-    @FXML private Button tasksBtnFXID;
-    @FXML private Pane tasksPaneFXID;
-    @FXML private ListView<String> tasksListView;
-    @FXML private TextField tasksTextField;
-    @FXML private Button addTasksBtn;
-    @FXML private Button editTasksBtn;
-    @FXML private Button removeTasksBtn;
+    @FXML
+    private Button addAlarmsBtn;
+    @FXML
+    private Button addTasksBtn;
+    @FXML
+    private Button alarmsBtnFXID;
+    @FXML
+    private ListView<String> alarmsListView;
+    @FXML
+    private Pane alarmsPaneFXID;
+    @FXML
+    private TextField alarmsTextField;
+    @FXML
+    private Button editAlarmsBtn;
+    @FXML
+    private Button editTasksBtn;
+    @FXML
+    private Button habitsBtnFXID;
+    @FXML
+    private Pane habitsPaneFXID;
+    @FXML
+    private Button homeBtnFXID;
+    @FXML
+    private Pane homePaneFXID;
+    @FXML
+    private Button removeAlarmsBtn;
+    @FXML
+    private Button removeTasksBtn;
+    @FXML
+    private Button tasksBtnFXID;
+    @FXML
+    private ListView<String> tasksListView;
+    @FXML
+    private Pane tasksPaneFXID;
+    @FXML
+    private TextField tasksTextField;
     
     private int selectedTask;
     
@@ -55,8 +80,12 @@ public class Controller implements Initializable {
 			homePaneFXID.toFront();
 		}else if(e.getSource() == tasksBtnFXID) {
 			tasksPaneFXID.toFront();
-		}else if(e.getSource() == remindersBtnFXID) {
-			remindersPaneFXID.toFront();
+		}else if(e.getSource() == alarmsBtnFXID) {
+			alarmsPaneFXID.toFront();
+		}else if(e.getSource() == habitsBtnFXID) {
+			habitsPaneFXID.toFront();
+		}else {
+			homePaneFXID.toFront();
 		}
 	}
 	
@@ -104,5 +133,7 @@ public class Controller implements Initializable {
 			selectedTask = tasksListView.getSelectionModel().getSelectedIndex();
 			tasksListView.getItems().remove(selectedTask);
 		}
+		
+		
 	
 }

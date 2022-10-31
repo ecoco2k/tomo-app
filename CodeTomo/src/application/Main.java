@@ -26,6 +26,8 @@ public class Main extends Application {
 			primaryStage.setTitle("Test");
 			primaryStage.setScene(scene);//Setting View (MVC Model)
 			primaryStage.show();
+			
+			//Controller.tasksListView.setCellFactory(param -> new Controller.Cell());
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

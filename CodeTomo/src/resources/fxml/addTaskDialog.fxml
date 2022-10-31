@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<DialogPane fx:id="tAddTaskPane" prefHeight="232.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<DialogPane fx:id="tAddTaskPane" prefHeight="232.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.Controller">
    <graphic>
       <GridPane hgap="10.0" prefHeight="150.0" prefWidth="519.0" vgap="25.0">
         <columnConstraints>

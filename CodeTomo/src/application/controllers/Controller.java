@@ -1,4 +1,4 @@
-package application;
+package application.controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -142,7 +142,7 @@ public class Controller implements Initializable {
 			//tasksListView.getItems().add(tasksTextField.getText());
 			try {
 			FXMLLoader fxmlLoader = new FXMLLoader();
-			fxmlLoader.setLocation(getClass().getResource("/resources/addTaskDialog.fxml"));
+			fxmlLoader.setLocation(getClass().getResource("/resources/fxml/addTaskDialog.fxml"));
 			DialogPane tAddTaskPane = fxmlLoader.load();
 			Controller tController = fxmlLoader.getController();
 			

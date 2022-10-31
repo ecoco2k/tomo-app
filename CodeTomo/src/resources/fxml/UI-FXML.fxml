@@ -12,13 +12,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.Controller">
    <children>
       <VBox prefHeight="720.0" prefWidth="250.0">
          <children>
             <ImageView fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@images/lillipup_sprite____by_potedeberzas_deqiesw-pre.png" />
+                  <Image url="@../images/lillipup_sprite____by_potedeberzas_deqiesw-pre.png" />
                </image></ImageView>
             <Button id="homeBtnID" fx:id="homeBtnFXID" mnemonicParsing="false" onAction="#handleClicksFrame" prefHeight="62.0" prefWidth="266.0" text="Home" />
             <Button id="tasksBtnID" fx:id="tasksBtnFXID" mnemonicParsing="false" onAction="#handleClicksFrame" prefHeight="62.0" prefWidth="266.0" text="Tasks" />
